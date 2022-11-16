@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="box-header">
+      <h1>Mentoria</h1>
+      <p class="paragraph">Preencha o formulário abaixo para agendar a sua mentoria 🖋</p>
+    </header>
+    <form id="my-form">
+      <fieldset class="box-fieldset">
+        
+        <legend class="info">Informações pessoais</legend>
+
+        <div class="data-box">
+
+          <div class="flex">
+            <label class="lab-dice" for="event-name">Nome</label>
+            <input 
+            type="text"
+            for="event-name"
+           
+          >
+            
+          </div>
+
+          <div class="flex">
+            <label class="lab-dice" for="event-last">Sobrenome</label>
+            <input type="text" id="event-last">
+          </div>
+
+        </div>
+        <div class="box-data">
+          <label class="lab-dice" for="event-email">Email <span class="details">(digite um email válido)</span></label>
+          <input 
+          type="email" 
+          id="event-email"
+          required
+          >
+          <label class="lab-dice" for="event-password">Senha <span class="details">(mínimo de 6 caracteres)</span></label>
+          <input 
+            type="password" 
+            id="event-password" 
+            required
+            minlength="6">
+        </div>
+      </fieldset>
+      <fieldset class="box-fieldset">
+        <legend class="info space">Informações do mentor</legend>
+
+        <div class="box-data">
+          <label class="lab-dice" for="mentorship">Nome do seu mentor<span class="details">(só o primeiro nome)</span></label>
+          <input
+           type="text" 
+           id="mentorship"
+           required
+          >
+        </div>
+      </fieldset>
+      <fieldset  class="box-fieldset">
+       <legend class="info space">Seus horários disponíveis</legend>  
+       
+       <p class="paragraph-sub">Primeira mentoria</p>
+       
+       <div class="box-time">
+        <div class="box position">
+          <label class="box-input  "for="event-date">Data <span class="details">(DD/MM/AAAA)</span></label>
+          <input class="input-date"  type="text" id="event-date">
+        </div>
+
+        <div class="box-start">
+          <label  class="box-input" for="event-begin">Das</label>
+          <input type="time" id="event-begin">
+        </div>
+
+        <div class="box-start">
+          <label class="box-input"  class="box-input"for="event-end">Até</label>
+          <input  type="time" id="event-end">
+        </div>
+       </div>
+
+       <p class="paragraph-sub">Segunda mentoria</p>
+       <div class="box-time">
+        <div class="box position">
+          <label class="box-input " for="event-date-two">Data<span class="details">(DD/MM/AAAA)</span></label>
+          <input type="text" id="event-date">
+        </div>
+
+        <div class="box-start">
+          <label class="box-input"for="event-begin">Das</label>
+          <input type="time" id="event-begin">
+        </div>
+
+        <div class="box-start ">
+          <label class="box-input" for="event-end">Até</label>
+          <input class="test" type="time" id="event-end">
+        </div>
+       </div>
+      </fieldset>
+    </form>
+
+    <footer>
+   
+      <button 
+        class="btn" 
+        type="submit"
+        value="Submit"
+        form="my-form"
+      >
+        Salvar
+      </button>
+  
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
