@@ -5,59 +5,107 @@
 }
 
 :root{
-  --ff-heading: font-family: 'Staatliches', cursive;
-  --ff-texting: font-family: 'Palanquin', sans-serif;
+  --ff-heading:'Staatliches', cursive;
+  --ff-texting:'Palanquin', sans-serif;
 
-  font-size: 62.5%;
-  --fs-body: 2rem;
-  --fs-heading: 4rem;
+      font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fs-heading: 4rem;
 
-  --fc-heading: #FFFFFF;
-  --fc-body: #4A4E69;
-  --bg-primary:#8E9AAF;
-  --bg-secondary-header:#CBC0D3;
-  --bg-secondary:#FEEAFA;
+  --fc-primary: #FFFFFF;
+  --fc-secondary:#23053A;
+  --fc-tertiary:#4A4E69; 
+  --bg-primary:#EFF1FF;
+  --bg-secondary:#8E9AAF;  
+  --bg-tertiary:#CBC0D3;
+
+
 }
 
+body{
+  background:var(--bg-primary);
+  font-family:var(--ff-texting);
+  font-weight:400;
+  width:100%;
+}
 
 .container{
-  max-width:24rem;
+  max-width:38.4rem;
+  margin:0 auto;
 }
 
-
-header {
-  position: relative;
-  /* width: 24rem; */
-  height: 17.4rem;
-  left: 0px;
-  top: 0px;
-  background:var(--bg-primary);
-  
-}
-
-header h1{
-  text-transform: uppercase;
-  font-weight:400;
-  font-size: var(--fs-heading);
-  letter-spacing: 0.05em;
-  line-height:3.4rem;
-  color: var(--fc-heading);
-  margin-top: 4rem;
-
-  position:absolute;
-  top: 12.56rem;
-  left: 0px;
-  /* width: 24rem; */
-  height: 3rem;
-  background: #CBC0D3;
-}
-
-.card img{
+.box-header{
+  background:var(--bg-secondary);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: auto;
+  height:27.9rem;
 }
 
-.card h2{
-  background-color:var(--bg-secondary-text)
+.box-title{
+  font-family: var(--ff-heading);
+  background: var(--bg-tertiary);
+  height: 49px;
+  width: 100%;
+  margin-top:3.2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform: uppercase;
+  letter-spacing:3px;
 }
 
+.box-title h1{
+  color: var( --fc-primary);
+  font-size:40px  ;
+  line-height:34px;
+}
+
+.img-title{
+  width: 137px;
+  height: 137px;
+  margin-top:32px;
+}
+
+.box-card{
+  width: 100%;
+  display: grid;
+}
+
+.paragraph{
+  font-family:var(--ff-texting);
+  font-size: var(--fs-body);
+  color: var(--fc-secondary);
+  margin:1.4rem 0 6.3rem; 
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  heading: auto;
+}
+
+.box-card img{
+  weight:32rem;
+  object-fit: cover;
+}
+
+.card-content{
+  position: relative;
+}
+.card-content-h2{
+ position:absolute;
+ background:var(--fc-primary);
+ color:var(--fc-tertiary);
+ top: 30rem;
+ left:26rem;
+
+}
+.card-content-h{
+  position:absolute;
+  background:var(--fc-primary);
+  color:var(--fc-tertiary);
+  top: 30rem;
+  left:26rem;
+}
